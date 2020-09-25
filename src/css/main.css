@@ -1,0 +1,30 @@
+.main {
+  width: 1000px;
+  height: 2000px;
+  background: #ccc;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.main .title {
+  width: 100%;
+  height: 34px;
+  margin: 16px auto;
+  background: #000;
+}
+.main .show {
+  width: 100%;
+  height: 278px;
+  background: pink;
+}
+.main .rob {
+  width: 100%;
+  height: 372px;
+  background: pink;
+}
+.main .sale {
+  width: 100%;
+  height: 800px;
+  background: pink;
+}
+
+/*# sourceMappingURL=main.css.map */

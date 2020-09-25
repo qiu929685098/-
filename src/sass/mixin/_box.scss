@@ -1,0 +1,13 @@
+@charset "utf-8";
+//设置弹性盒模型
+@mixin box ($justify) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: $justify;
+}
+
+//设置边框
+@mixin border($color:red) {
+    border: solid 1px $color;
+}

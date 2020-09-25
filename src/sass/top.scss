@@ -1,0 +1,131 @@
+@charset "utf-8";
+//顶部导航栏
+.top {
+    width: 100%;
+    height: 28px;
+    background: #f6f6f6;
+    border-bottom: 1px solid #ddd;
+    .top_main {
+        width: 1000px;
+        height: 28px;
+        @include box(space-between);
+        margin: 0 auto;
+        font-size: 12px;
+        color: #666;
+        position: relative;
+    }
+    .top_left {
+        width: 250px;
+        height: 28px;
+        span {
+            line-height: 28px;
+            background: url(../images/icons.png);
+            background-position: -98px;
+            background-position-y: -196px;
+            background-repeat: no-repeat;
+            padding-left: 18px;
+            float: left;
+        }
+        ul {
+            width: 190px;
+            height: 28px;
+            float: left;
+            position: absolute;
+            left: 57px;
+            top: 0;
+            overflow: hidden;
+            li {
+                width: 190px;
+                height: 28px;
+                float: left;
+                line-height: 28px;
+            }
+            li:hover {
+                color: #f70800;
+                cursor: pointer;
+            }
+        }
+    }
+    .top_right {
+        width: 420px;
+        height: 28px;
+        ul {
+            @include box(space-between);
+            height: 28px;
+        }
+        li {
+            float: left;
+            img {
+                width: 9px;
+                height: 12px;
+            }
+        }
+        a:hover {
+            color: #f70800;
+        }
+    }
+}
+
+//头部搜索栏
+header {
+    background: #FFFFFF;
+    main {
+        width: 1000px;
+        height: 95px;
+        margin: 0 auto;
+        @include box(space-between);
+        color: #666;
+        .header_left {
+            width: 206px;
+            height: 75px;
+            margin-top: 20px;
+        }
+        .header_center {
+            font-size: 0;
+            .l {
+                width: 343px;
+                height: 38px;
+                line-height: 38px;
+                text-indent: 15px;
+                color: #999;
+                border: solid 3px #f70800;
+                font-size: 12px;
+                outline: none;
+            }
+            .r {
+                width: 76px;
+                height: 38px;
+                cursor: pointer;
+                background: #f70800;
+                color: white;
+                line-height: 38px;
+                border: none;
+                outline: none;
+            }
+        }
+        .header_right {
+            width: 183px;
+            height: 63px;
+            margin-top: 20px;
+        }
+    }
+}
+
+//导航栏
+nav {
+    width: 100%;
+    height: 40px;
+    background: #f70800;
+    .nav_main {
+        width: 1000px;
+        height: 40px;
+        background: #ccc;
+        margin: 0 auto;
+    }
+}
+
+//轮播图
+.wall {
+    width: 100%;
+    height: 340px;
+}

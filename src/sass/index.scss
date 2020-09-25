@@ -1,0 +1,35 @@
+@charset "utf-8";
+//添加公共样式
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: #f2f2f2;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+//引入mixin文件
+@import'./mixin/box';
+//引入css样式
+@import'top';
+@import'main';
+@import'foot';
