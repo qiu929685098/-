@@ -1,4 +1,6 @@
 @charset "utf-8";
+//引入混合宏文件
+@import'./mixin/box';
 //顶部导航栏
 .top {
     width: 100%;
@@ -8,7 +10,7 @@
     .top_main {
         width: 1000px;
         height: 28px;
-        @include box(space-between);
+        @include row(space-between);
         margin: 0 auto;
         font-size: 12px;
         color: #666;
@@ -19,10 +21,7 @@
         height: 28px;
         span {
             line-height: 28px;
-            background: url(../images/icons.png);
-            background-position: -98px;
-            background-position-y: -196px;
-            background-repeat: no-repeat;
+            background: url(../images/icons.png) no-repeat -98px -196px;
             padding-left: 18px;
             float: left;
         }
@@ -49,8 +48,9 @@
     .top_right {
         width: 420px;
         height: 28px;
+        position: relative;
         ul {
-            @include box(space-between);
+            @include row(space-between);
             height: 28px;
         }
         li {
@@ -63,6 +63,23 @@
         a:hover {
             color: #f70800;
         }
+        .app {
+            width: 100px;
+            height: 120px;
+            background: white;
+            @include col(space-around);
+            font-size: 14px;
+            color: red;
+            position: absolute;
+            right: -20px;
+            top: 30px;
+            box-shadow: 0 0 5px rgb(17, 17, 17);
+            display: none;
+            img {
+                width: 80px;
+                height: 80px;
+            }
+        }
     }
 }
 
@@ -73,7 +90,7 @@ header {
         width: 1000px;
         height: 95px;
         margin: 0 auto;
-        @include box(space-between);
+        @include row(space-between);
         color: #666;
         .header_left {
             width: 206px;
@@ -119,8 +136,46 @@ nav {
     .nav_main {
         width: 1000px;
         height: 40px;
-        background: #ccc;
         margin: 0 auto;
+    }
+    li {
+        height: 40px;
+        float: left;
+        a {
+            font-size: 15px;
+            color: #fff;
+            font-weight: 900;
+            line-height: 40px;
+            padding: 10px 20px;
+            position: relative;
+        }
+    }
+    li:nth-child(1) {
+        background: rgba(0, 0, 0, .2);
+    }
+    li:nth-child(2) a:before {
+        content: '';
+        // display: block;
+        width: 24px;
+        height: 24px;
+        background: url(../images/icon-tv.png) no-repeat;
+        background-size: 100%;
+        position: absolute;
+        left: 15px;
+        top: 10px;
+    }
+    li:nth-child(2) a {
+        padding-left: 45px;
+    }
+    li:last-child {
+        float: right;
+        a {
+            display: block;
+            width: 134px;
+            height: 40px;
+            color: transparent;
+            background: url(../images/searchbar.jpg) no-repeat 0 -65px;
+        }
     }
 }
 

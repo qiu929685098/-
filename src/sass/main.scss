@@ -1,30 +1,81 @@
 @charset "utf-8";
+@import'./mixin/box';
 //版心部分
 .main {
     width: 1000px;
-    height: 2000px;
     background: #ccc;
     margin: 0 auto;
     overflow: hidden;
     .title {
         width: 100%;
-        height: 34px;
-        margin: 16px auto;
-        background: #000;
+        height: 62px;
+        @include row(space-between);
+        .box {
+            width: 300px;
+            @include row(space-between);
+            div:nth-child(1) {
+                width: 4px;
+                height: 22px;
+                background: #f70800;
+                margin-left: 7px;
+            }
+            div:nth-child(2) {
+                color: #f70800;
+                font-size: 26px;
+                font-weight: 900;
+            }
+            div:nth-child(3) {
+                font-size: 24px;
+                font-weight: 900;
+            }
+            div:nth-child(4) {
+                color: #666;
+                margin-top: 6px;
+            }
+        }
+        a {
+            width: 116px;
+            height: 34px;
+            background: url(../images/节目表.png) no-repeat;
+        }
     }
+    //直播节目表
     .show {
         width: 100%;
-        height: 278px;
+        height: 318px;
+        padding: 19px;
         background: pink;
+        ul {
+            background: white;
+        }
     }
+    //今日必抢
     .rob {
         width: 100%;
         height: 372px;
+        margin: 12px;
+        padding: 19px;
         background: pink;
     }
-    .sale {
+    //惠买优选
+    .salelist {
         width: 100%;
-        height: 800px;
-        background: pink;
+        margin: 12px;
+        padding: 19px;
+        ul {
+            @include row(space-between);
+            flex-wrap: wrap;
+            li {
+                width: 320px;
+                height: 462px;
+            }
+            div {
+                padding: 10px;
+            }
+            img {
+                width: 300px;
+                height: 300px;
+            }
+        }
     }
 }
