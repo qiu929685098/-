@@ -75,6 +75,7 @@
             top: 30px;
             box-shadow: 0 0 5px rgb(17, 17, 17);
             display: none;
+            z-index: 1;
             img {
                 width: 80px;
                 height: 80px;
@@ -96,6 +97,7 @@ header {
             width: 206px;
             height: 75px;
             margin-top: 20px;
+            cursor: pointer;
         }
         .header_center {
             font-size: 0;
@@ -150,12 +152,14 @@ nav {
             position: relative;
         }
     }
-    li:nth-child(1) {
+    .newli_bg {
+        background: rgba(0, 0, 0, .1);
+    }
+    .navli_bg {
         background: rgba(0, 0, 0, .2);
     }
     li:nth-child(2) a:before {
         content: '';
-        // display: block;
         width: 24px;
         height: 24px;
         background: url(../images/icon-tv.png) no-repeat;

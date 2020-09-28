@@ -1,8 +1,15 @@
 footer {
   width: 100%;
   height: 535px;
+  background: #FFFFFF;
+}
+footer main {
+  width: 1000px;
+  height: 535px;
   padding-bottom: 90px;
-  background: yellow;
+  background: url(../images/foot_bg.jpg) no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=foot.css.map */

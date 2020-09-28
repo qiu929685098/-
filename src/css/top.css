@@ -82,6 +82,7 @@
   top: 30px;
   box-shadow: 0 0 5px #111111;
   display: none;
+  z-index: 1;
 }
 .top .top_right .app img {
   width: 80px;
@@ -105,6 +106,7 @@ header main .header_left {
   width: 206px;
   height: 75px;
   margin-top: 20px;
+  cursor: pointer;
 }
 header main .header_center {
   font-size: 0;
@@ -157,7 +159,10 @@ nav li a {
   padding: 10px 20px;
   position: relative;
 }
-nav li:nth-child(1) {
+nav .newli_bg {
+  background: rgba(0, 0, 0, 0.1);
+}
+nav .navli_bg {
   background: rgba(0, 0, 0, 0.2);
 }
 nav li:nth-child(2) a:before {

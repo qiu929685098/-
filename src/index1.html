@@ -27,13 +27,13 @@
             </article>
             <article class="top_right">
                 <ul>
-                    <li><span><a href="#">注册</a>&nbsp;&nbsp;|</span></li>
-                    <li><span><a href="#">登录</a>&nbsp;&nbsp;|</span></li>
+                    <li><span><a href="./registry.html">注册</a>&nbsp;&nbsp;|</span></li>
+                    <li><span><a href="./login.html">登录</a>&nbsp;&nbsp;|</span></li>
                     <li><span><a href="#">我的订单</a>&nbsp;&nbsp;|</span></li>
                     <li><span><a href="#">我的关注</a>&nbsp;&nbsp;|</span></li>
                     <li><span><a href="#">资讯</a>&nbsp;&nbsp;|</span></li>
                     <li><span><a href="#">品牌馆</a>  &nbsp;&nbsp;|</span></li>
-                    <li><span><a href="#"><img src="./images/phone.png" alt=""> &nbsp;手机惠买</a></span></li>
+                    <li class="last_li"><span><a href="#"><img src="./images/phone.png" alt=""> &nbsp;手机惠买</a></span></li>
                 </ul>
                 <section class="app">
                     <img src="./images/appdown.jpg" alt="">
@@ -64,7 +64,7 @@
     <nav>
         <section class="nav_main">
             <ul>
-                <li><a href="#">首页</a></li>
+                <li class="navli_bg"><a href="#">首页</a></li>
                 <li><a href="#">视频</a></li>
                 <li><a href="#">品质厨房</a></li>
                 <li><a href="#">美食民生</a></li>
@@ -100,33 +100,57 @@
         </div>
         <section class="show">
             <ul>
-
+                <!-- 渲染直播间 -->
             </ul>
         </section>
         <!-- 今日必抢 -->
         <div class="title">
-            <div class="box">
+            <div class="box" style="width: 120px;">
                 <div> </div>
-                <div>TV</div>
-                <div>直播</div>
-                <div>上惠买APP，拼着买更便宜</div>
+                <div>今日</div>
+                <div>必抢</div>
             </div>
-            <a href=""></a>
         </div>
-        <section class="rob"></section>
+        <section class="rob">
+            <!-- 左半边 -->
+            <div class="left">
+                <div class="l"></div>
+                <div class="r"></div>
+                <div class="t">
+                    <div class="clock"></div>
+                    每日一品
+                </div>
+                <div class="b">
+                    <div class="txt">
+                        <span>随机</span>
+                        <br>
+                        <span>立减</span>
+                    </div>
+                </div>
+                <div class="bg">
+                    <ul>
+                        <!-- 渲染抢购 -->
+                    </ul>
+                </div>
+            </div>
+            <!-- 右半边 -->
+            <div class="right">
+                <ul>
+                    <!-- 渲染右边的商品 -->
+                </ul>
+            </div>
+        </section>
         <!-- 惠买优选 -->
         <div class="title">
-            <div class="box">
+            <div class="box" style="width: 120px;">
                 <div> </div>
-                <div>TV</div>
-                <div>直播</div>
-                <div>上惠买APP，拼着买更便宜</div>
+                <div>惠买</div>
+                <div>优选</div>
             </div>
-            <a href=""></a>
         </div>
         <section class="salelist">
             <ul>
-
+                <!-- 渲染商品列表 -->
             </ul>
         </section>
     </section>
@@ -134,16 +158,19 @@
 
     <!-- 底部 -->
     <footer>
-        <!-- 底部的头部 -->
-        <section class="foot_top"></section>
-        <!-- 底部的中部 -->
-        <section class="foot_center"></section>
-        <!-- 底部的底部 -->
-        <section class="foot_bottom"></section>
+        <main>
+            <!-- 底部的头部 -->
+            <section class="foot_top"></section>
+            <!-- 底部的中部 -->
+            <section class="foot_center"></section>
+            <!-- 底部的底部 -->
+            <section class="foot_bottom"></section>
+        </main>
     </footer>
 </body>
-<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/1.11.0/jquery.js"></script>
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery.lazyload/1.8.3/jquery.lazyload.min.js"></script>
-<script src="./script/list.js"></script>
+<script src="./script/index.js"></script>
+<script src="./script/main.js"></script>
 
 </html>
