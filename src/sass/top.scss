@@ -173,13 +173,11 @@ nav {
     }
     li:last-child {
         float: right;
-        a {
-            display: block;
-            width: 134px;
-            height: 40px;
-            color: transparent;
-            background: url(../images/searchbar.jpg) no-repeat 0 -65px;
-        }
+        display: block;
+        width: 134px;
+        height: 40px;
+        color: transparent;
+        background: url(../images/searchbar.jpg) no-repeat 0 -65px;
     }
 }
 
