@@ -769,14 +769,117 @@ aside .bottom .b {
   color: #000;
 }
 .listmain .list_nav .r {
-  width: 150px;
+  width: 160px;
   height: 46px;
-  background: pink;
 }
 .listmain .list_nav .r div {
-  margin-right: 5px;
+  margin-right: 12px;
   font-size: 12px;
   line-height: 46px;
+  float: left;
+}
+
+.sol ul {
+  width: 1000px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.sol ul li {
+  width: 320px;
+  height: 462px;
+  border: 1px solid #ddd;
+  background: white;
+  margin-bottom: 20px;
+}
+.sol ul div {
+  width: 318px;
+  height: 453px;
+  padding: 10px;
+}
+.sol ul div img {
+  width: 298px;
+  height: 298px;
+}
+.sol ul div .title {
+  width: 298px;
+  height: 52px;
+  padding: 0 10px;
+  margin-top: 18px;
+  color: #222;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.sol ul .pri {
+  width: 298px;
+  height: 29px;
+  padding: 15px 15px 15px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.sol ul .price {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #222;
+}
+.sol ul .prititle {
+  font-size: 12px;
+  margin-top: 9px;
+  color: #666;
+}
+.sol ul .prititle i {
+  font-style: normal;
+  color: #f70800;
+}
+
+.pagediv {
+  width: 1000px;
+  height: 22px;
+  margin: 0 auto 30px auto;
+}
+
+.pagebox {
+  width: 515px;
+  height: 22px;
+  float: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 12px;
+  line-height: 22px;
+}
+.pagebox a {
+  width: 62px;
+  height: 22px;
+  border: 1px solid #C5C5C5;
+}
+.pagebox .pagelist {
+  width: 240px;
+  height: 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.pagebox .pagelist a {
+  width: 22px;
+  height: 22px;
+  border: 1px solid #C5C5C5;
+}
+.pagebox a:hover {
+  border: solid 1px red;
+  color: red;
 }
 
 /*# sourceMappingURL=index.css.map */

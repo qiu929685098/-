@@ -41,7 +41,7 @@
 // -------------------⭐渲染图文详情-----------------------------
 ! function() {
     $.ajax({
-            url: 'http://192.168.13.44/project/youpin/php/listdata.php',
+            url: 'http://192.168.13.5/project/youpin/php/listdata.php',
             dataType: 'json' //设置json格式的对象。
         })
         .done((data) => {

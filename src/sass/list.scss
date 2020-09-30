@@ -1,14 +1,14 @@
 @charset "utf-8";
 //引入混合宏文件
 @import'./mixin/box';
-//顶部背景图
+//⚪顶部背景图
 .listwall {
     width: 1000px;
     height: 87px;
     margin: 0 auto;
 }
 
-//列表页主体
+//⚪列表页主体
 .listmain {
     width: 1000px;
     margin: 0 auto;
@@ -37,16 +37,111 @@
                 padding-right: 10px;
                 color: #000;
             }
+            // a:hover {
+            //     color: white;
+            // }
         }
         .r {
-            width: 150px;
+            width: 160px;
             height: 46px;
-            background: pink;
             div {
-                margin-right: 5px;
+                margin-right: 12px;
                 font-size: 12px;
                 line-height: 46px;
+                float: left;
             }
         }
+    }
+}
+
+//⚪渲染图文列表
+.sol {
+    ul {
+        width: 1000px;
+        height: 100%;
+        @include row(space-between);
+        flex-wrap: wrap;
+        margin: 0 auto;
+        li {
+            width: 320px;
+            height: 462px;
+            border: 1px solid #ddd;
+            background: white;
+            margin-bottom: 20px;
+        }
+        div {
+            width: 318px;
+            height: 453px;
+            padding: 10px;
+            img {
+                width: 298px;
+                height: 298px;
+            }
+            .title {
+                width: 298px;
+                height: 52px;
+                padding: 0 10px;
+                margin-top: 18px;
+                color: #222;
+                @include row(space-between);
+            }
+        }
+        .pri {
+            width: 298px;
+            height: 29px;
+            padding: 15px 15px 15px 10px;
+            @include row(space-between);
+            margin-top: 20px;
+        }
+        .price {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #222;
+        }
+        .prititle {
+            font-size: 12px;
+            margin-top: 9px;
+            color: #666;
+            i {
+                font-style: normal;
+                color: #f70800;
+            }
+        }
+    }
+}
+
+//⚪分页按钮
+.pagediv {
+    width: 1000px;
+    height: 22px;
+    margin: 0 auto 30px auto;
+}
+
+.pagebox {
+    width: 515px;
+    height: 22px;
+    float: right;
+    @include row(space-between);
+    text-align: center;
+    font-size: 12px;
+    line-height: 22px;
+    a {
+        width: 62px;
+        height: 22px;
+        border: 1px solid #C5C5C5;
+    }
+    .pagelist {
+        width: 240px;
+        height: 22px;
+        @include row(space-between);
+        a {
+            width: 22px;
+            height: 22px;
+            border: 1px solid #C5C5C5;
+        }
+    }
+    a:hover {
+        border: solid 1px red;
+        color: red;
     }
 }
