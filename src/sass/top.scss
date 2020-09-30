@@ -139,45 +139,119 @@ nav {
         width: 1000px;
         height: 40px;
         margin: 0 auto;
-    }
-    li {
-        height: 40px;
-        float: left;
-        a {
-            font-size: 15px;
-            color: #fff;
-            font-weight: 900;
-            line-height: 40px;
-            padding: 10px 20px;
-            position: relative;
+        position: relative;
+        .mainul {
+            li {
+                height: 40px;
+                float: left;
+                a {
+                    font-size: 15px;
+                    color: #fff;
+                    font-weight: 900;
+                    line-height: 40px;
+                    padding: 10px 20px;
+                    position: relative;
+                }
+            }
+            .newli_bg {
+                background: rgba(0, 0, 0, .1);
+            }
+            .navli_bg {
+                background: rgba(0, 0, 0, .2);
+            }
+            li:nth-child(2) a:before {
+                content: '';
+                width: 24px;
+                height: 24px;
+                background: url(../images/icon-tv.png) no-repeat;
+                background-size: 100%;
+                position: absolute;
+                left: 15px;
+                top: 10px;
+            }
+            li:nth-child(2) a {
+                padding-left: 45px;
+            }
+            .menu {
+                float: right;
+                display: block;
+                width: 134px;
+                height: 40px;
+                color: #222;
+                background: url(../images/searchbar.jpg) no-repeat 0 -65px;
+            }
+            .menu:hover {
+                background: url(../images/searchbar.jpg) no-repeat 0 -133px;
+            }
         }
     }
-    .newli_bg {
-        background: rgba(0, 0, 0, .1);
-    }
-    .navli_bg {
-        background: rgba(0, 0, 0, .2);
-    }
-    li:nth-child(2) a:before {
-        content: '';
-        width: 24px;
-        height: 24px;
-        background: url(../images/icon-tv.png) no-repeat;
-        background-size: 100%;
+    article {
+        width: 100%;
+        height: auto;
+        background: #fff;
         position: absolute;
-        left: 15px;
-        top: 10px;
-    }
-    li:nth-child(2) a {
-        padding-left: 45px;
-    }
-    li:last-child {
-        float: right;
-        display: block;
-        width: 134px;
-        height: 40px;
-        color: transparent;
-        background: url(../images/searchbar.jpg) no-repeat 0 -65px;
+        top: 40px;
+        left: 0;
+        overflow: hidden;
+        @include row(space-between);
+        display: none;
+        .div_box {
+            width: 166px;
+            height: 300px;
+            padding: 0 15px;
+            margin-left: -1px;
+            border-left: 1px solid #d9d9d9;
+        }
+        .div_top {
+            width: 100%;
+            height: 50px;
+            border-bottom: 1px solid #d9d9d9;
+            @include row(center);
+            img {
+                width: 30px;
+                height: 42px;
+            }
+            span {
+                display: block;
+                height: 42px;
+                line-height: 42px;
+                margin-top: 5px;
+                font-weight: 900;
+                font-size: 14px;
+                cursor: pointer;
+            }
+            .span1:hover {
+                color: #FF4074;
+            }
+            .span2:hover {
+                color: #489FFA;
+            }
+            .span3:hover {
+                color: #66BC09;
+            }
+            .span4:hover {
+                color: #FF8C38;
+            }
+            .span5:hover {
+                color: #FF4074;
+            }
+            .span6:hover {
+                color: #49A2FF;
+            }
+        }
+        .div_bottom {
+            @include col(flex-start);
+            padding-top: 5px;
+            a {
+                color: #555;
+                font-size: 12px;
+                height: 24px;
+                line-height: 24px;
+            }
+            a:hover {
+                color: red;
+            }
+        }
     }
 }
 

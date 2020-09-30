@@ -146,12 +146,13 @@ nav .nav_main {
   width: 1000px;
   height: 40px;
   margin: 0 auto;
+  position: relative;
 }
-nav li {
+nav .nav_main .mainul li {
   height: 40px;
   float: left;
 }
-nav li a {
+nav .nav_main .mainul li a {
   font-size: 15px;
   color: #fff;
   font-weight: 900;
@@ -159,13 +160,13 @@ nav li a {
   padding: 10px 20px;
   position: relative;
 }
-nav .newli_bg {
+nav .nav_main .mainul .newli_bg {
   background: rgba(0, 0, 0, 0.1);
 }
-nav .navli_bg {
+nav .nav_main .mainul .navli_bg {
   background: rgba(0, 0, 0, 0.2);
 }
-nav li:nth-child(2) a:before {
+nav .nav_main .mainul li:nth-child(2) a:before {
   content: '';
   width: 24px;
   height: 24px;
@@ -175,18 +176,96 @@ nav li:nth-child(2) a:before {
   left: 15px;
   top: 10px;
 }
-nav li:nth-child(2) a {
+nav .nav_main .mainul li:nth-child(2) a {
   padding-left: 45px;
 }
-nav li:last-child {
+nav .nav_main .mainul .menu {
   float: right;
-}
-nav li:last-child a {
   display: block;
   width: 134px;
   height: 40px;
-  color: transparent;
+  color: #222;
   background: url(../images/searchbar.jpg) no-repeat 0 -65px;
+}
+nav .nav_main .mainul .menu:hover {
+  background: url(../images/searchbar.jpg) no-repeat 0 -133px;
+}
+nav article {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+}
+nav article .div_box {
+  width: 166px;
+  height: 300px;
+  padding: 0 15px;
+  margin-left: -1px;
+  border-left: 1px solid #d9d9d9;
+}
+nav article .div_top {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #d9d9d9;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+nav article .div_top img {
+  width: 30px;
+  height: 42px;
+}
+nav article .div_top span {
+  display: block;
+  height: 42px;
+  line-height: 42px;
+  margin-top: 5px;
+  font-weight: 900;
+  font-size: 14px;
+  cursor: pointer;
+}
+nav article .div_top .span1:hover {
+  color: #FF4074;
+}
+nav article .div_top .span2:hover {
+  color: #489FFA;
+}
+nav article .div_top .span3:hover {
+  color: #66BC09;
+}
+nav article .div_top .span4:hover {
+  color: #FF8C38;
+}
+nav article .div_top .span5:hover {
+  color: #FF4074;
+}
+nav article .div_top .span6:hover {
+  color: #49A2FF;
+}
+nav article .div_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 5px;
+}
+nav article .div_bottom a {
+  color: #555;
+  font-size: 12px;
+  height: 24px;
+  line-height: 24px;
+}
+nav article .div_bottom a:hover {
+  color: red;
 }
 
 .wall {

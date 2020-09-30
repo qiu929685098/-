@@ -1,0 +1,73 @@
+@charset "utf-8";
+//引入混合宏文件
+@import'./mixin/box';
+//侧边栏样式
+aside {
+    .mask {
+        width: 3px;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: #222222;
+        z-index: 2;
+    }
+    .top {
+        width: 36px;
+        height: 108px;
+        position: fixed;
+        top: 50%;
+        right: 0;
+        margin-top: -72px;
+        border: none;
+        border-radius: 8px 0 0 8px;
+        z-index: 1;
+        .t {
+            width: 36px;
+            height: 36px;
+            background: url(../images/saide.png) no-repeat;
+            cursor: pointer;
+        }
+        .c {
+            width: 36px;
+            height: 36px;
+            background: url(../images/saide.png) no-repeat 0 -92px;
+            cursor: pointer;
+        }
+        .b {
+            width: 36px;
+            height: 36px;
+            background: url(../images/saide.png) no-repeat 0 -138px;
+            cursor: pointer;
+        }
+    }
+    .bottom {
+        width: 36px;
+        height: 108px;
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        border: none;
+        border-radius: 8px 0 0 8px;
+        z-index: 1;
+        background: #000;
+        .t {
+            width: 36px;
+            height: 36px;
+            background: url(../images/saide.png) no-repeat 0 -184px;
+            cursor: pointer;
+        }
+        .c {
+            width: 36px;
+            height: 36px;
+            background: url(../images/saide.png) no-repeat 0 -230px;
+            cursor: pointer;
+        }
+        .b {
+            width: 36px;
+            height: 36px;
+            background: url(../images/saide.png) no-repeat 0 -276px;
+            cursor: pointer;
+        }
+    }
+}

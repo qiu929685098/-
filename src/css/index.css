@@ -175,12 +175,13 @@ nav .nav_main {
   width: 1000px;
   height: 40px;
   margin: 0 auto;
+  position: relative;
 }
-nav li {
+nav .nav_main .mainul li {
   height: 40px;
   float: left;
 }
-nav li a {
+nav .nav_main .mainul li a {
   font-size: 15px;
   color: #fff;
   font-weight: 900;
@@ -188,13 +189,13 @@ nav li a {
   padding: 10px 20px;
   position: relative;
 }
-nav .newli_bg {
+nav .nav_main .mainul .newli_bg {
   background: rgba(0, 0, 0, 0.1);
 }
-nav .navli_bg {
+nav .nav_main .mainul .navli_bg {
   background: rgba(0, 0, 0, 0.2);
 }
-nav li:nth-child(2) a:before {
+nav .nav_main .mainul li:nth-child(2) a:before {
   content: '';
   width: 24px;
   height: 24px;
@@ -204,18 +205,96 @@ nav li:nth-child(2) a:before {
   left: 15px;
   top: 10px;
 }
-nav li:nth-child(2) a {
+nav .nav_main .mainul li:nth-child(2) a {
   padding-left: 45px;
 }
-nav li:last-child {
+nav .nav_main .mainul .menu {
   float: right;
-}
-nav li:last-child a {
   display: block;
   width: 134px;
   height: 40px;
-  color: transparent;
+  color: #222;
   background: url(../images/searchbar.jpg) no-repeat 0 -65px;
+}
+nav .nav_main .mainul .menu:hover {
+  background: url(../images/searchbar.jpg) no-repeat 0 -133px;
+}
+nav article {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+}
+nav article .div_box {
+  width: 166px;
+  height: 300px;
+  padding: 0 15px;
+  margin-left: -1px;
+  border-left: 1px solid #d9d9d9;
+}
+nav article .div_top {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #d9d9d9;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+nav article .div_top img {
+  width: 30px;
+  height: 42px;
+}
+nav article .div_top span {
+  display: block;
+  height: 42px;
+  line-height: 42px;
+  margin-top: 5px;
+  font-weight: 900;
+  font-size: 14px;
+  cursor: pointer;
+}
+nav article .div_top .span1:hover {
+  color: #FF4074;
+}
+nav article .div_top .span2:hover {
+  color: #489FFA;
+}
+nav article .div_top .span3:hover {
+  color: #66BC09;
+}
+nav article .div_top .span4:hover {
+  color: #FF8C38;
+}
+nav article .div_top .span5:hover {
+  color: #FF4074;
+}
+nav article .div_top .span6:hover {
+  color: #49A2FF;
+}
+nav article .div_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 5px;
+}
+nav article .div_bottom a {
+  color: #555;
+  font-size: 12px;
+  height: 24px;
+  line-height: 24px;
+}
+nav article .div_bottom a:hover {
+  color: red;
 }
 
 .wall {
@@ -576,6 +655,128 @@ footer main {
   background: url(../images/foot_bg.jpg) no-repeat;
   background-size: 100%;
   margin: 0 auto;
+}
+
+aside .mask {
+  width: 3px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background: #222222;
+  z-index: 2;
+}
+aside .top {
+  width: 36px;
+  height: 108px;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  margin-top: -72px;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  z-index: 1;
+}
+aside .top .t {
+  width: 36px;
+  height: 36px;
+  background: url(../images/saide.png) no-repeat;
+  cursor: pointer;
+}
+aside .top .c {
+  width: 36px;
+  height: 36px;
+  background: url(../images/saide.png) no-repeat 0 -92px;
+  cursor: pointer;
+}
+aside .top .b {
+  width: 36px;
+  height: 36px;
+  background: url(../images/saide.png) no-repeat 0 -138px;
+  cursor: pointer;
+}
+aside .bottom {
+  width: 36px;
+  height: 108px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  border: none;
+  border-radius: 8px 0 0 8px;
+  z-index: 1;
+  background: #000;
+}
+aside .bottom .t {
+  width: 36px;
+  height: 36px;
+  background: url(../images/saide.png) no-repeat 0 -184px;
+  cursor: pointer;
+}
+aside .bottom .c {
+  width: 36px;
+  height: 36px;
+  background: url(../images/saide.png) no-repeat 0 -230px;
+  cursor: pointer;
+}
+aside .bottom .b {
+  width: 36px;
+  height: 36px;
+  background: url(../images/saide.png) no-repeat 0 -276px;
+  cursor: pointer;
+}
+
+.listwall {
+  width: 1000px;
+  height: 87px;
+  margin: 0 auto;
+}
+
+.listmain {
+  width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.listmain h1 {
+  width: 100%;
+  height: 34px;
+  line-height: 34px;
+  font-size: 26px;
+  font-family: "微软雅黑", "黑体";
+  color: #333333;
+  margin: 26px 0 17px 0;
+}
+.listmain .list_nav {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 0 10px;
+}
+.listmain .list_nav .l {
+  width: 390px;
+  height: 46px;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.listmain .list_nav .l a {
+  display: block;
+  padding-right: 10px;
+  color: #000;
+}
+.listmain .list_nav .r {
+  width: 150px;
+  height: 46px;
+  background: pink;
+}
+.listmain .list_nav .r div {
+  margin-right: 5px;
+  font-size: 12px;
+  line-height: 46px;
 }
 
 /*# sourceMappingURL=index.css.map */
